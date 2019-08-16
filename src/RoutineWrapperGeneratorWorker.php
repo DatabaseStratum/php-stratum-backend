@@ -4,7 +4,7 @@ declare(strict_types=1);
 namespace SetBased\Stratum;
 
 /**
- *  Interface for classes that do the actual execution of the routine wrapper generator command.
+ * Interface for classes that do the actual execution of the routine wrapper generator command.
  */
 interface RoutineWrapperGeneratorWorker
 {

@@ -13,7 +13,7 @@ class Backend
    * Creates the object that does the actual execution of the constant command for the backend.
    *
    * @param Config       $settings The settings from the PhpStratum configuration file.
-   * @param StratumStyle $io       The output decorator.
+   * @param StratumStyle $io       The output object.
    *
    * @return ConstantWorker|null
    */
