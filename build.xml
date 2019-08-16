@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="php-mysql-data-layer" default="build" basedir=".">
+
+    <target name="build">
+        <echo message="noting to do."/>
+    </target>
+
+    <!-- Run composer update -->
+    <target name="update">
+        <exec command="composer update" checkreturn="true" passthru="true"/>
+    </target>
+</project>
