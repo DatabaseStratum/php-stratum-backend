@@ -4,9 +4,9 @@ declare(strict_types=1);
 namespace SetBased\Stratum;
 
 /**
- * Interface PhpStratum's backends.
+ * Semi interface for PhpStratum's backends.
  */
-interface Backend
+class Backend
 {
   //--------------------------------------------------------------------------------------------------------------------
   /**
@@ -15,9 +15,14 @@ interface Backend
    * @param Config       $settings The settings from the PhpStratum configuration file.
    * @param StratumStyle $io       The output decorator.
    *
-   * @return ConstantWorker
+   * @return ConstantWorker|null
    */
-  public function createConstantWorker(Config $settings, StratumStyle $io): ConstantWorker;
+  public function createConstantWorker(Config $settings, StratumStyle $io): ?ConstantWorker
+  {
+    unset($settings, $io);
+
+    return null;
+  }
 
   //--------------------------------------------------------------------------------------------------------------------
   /**
@@ -26,9 +31,14 @@ interface Backend
    * @param Config       $settings The settings from the PhpStratum configuration file.
    * @param StratumStyle $io       The output decorator.
    *
-   * @return RoutineLoaderWorker
+   * @return RoutineLoaderWorker|null
    */
-  public function createRoutineLoaderWorker(Config $settings, StratumStyle $io): RoutineLoaderWorker;
+  public function createRoutineLoaderWorker(Config $settings, StratumStyle $io): ?RoutineLoaderWorker
+  {
+    unset($settings, $io);
+
+    return null;
+  }
 
   //--------------------------------------------------------------------------------------------------------------------
   /**
@@ -37,10 +47,15 @@ interface Backend
    * @param Config       $settings The settings from the PhpStratum configuration file.
    * @param StratumStyle $io       The output decorator.
    *
-   * @return RoutineWrapperGeneratorWorker
+   * @return RoutineWrapperGeneratorWorker|null
    */
   public function createRoutineWrapperGeneratorWorker(Config $settings,
-                                                      StratumStyle $io): RoutineWrapperGeneratorWorker;
+                                                      StratumStyle $io): ?RoutineWrapperGeneratorWorker
+  {
+    unset($settings, $io);
+
+    return null;
+  }
 
   //--------------------------------------------------------------------------------------------------------------------
 }
