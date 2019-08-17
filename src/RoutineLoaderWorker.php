@@ -18,7 +18,7 @@ interface RoutineLoaderWorker
    *
    * @return int
    */
-  public function execute(?array $sources): int;
+  public function execute(?array $sources=null): int;
 
   //--------------------------------------------------------------------------------------------------------------------
 }
