@@ -26,6 +26,22 @@ class Backend
 
   //--------------------------------------------------------------------------------------------------------------------
   /**
+   * Creates the object that does the actual execution of the CRUD command for the backend.
+   *
+   * @param Config       $settings The settings from the PhpStratum configuration file.
+   * @param StratumStyle $io       The output decorator.
+   *
+   * @return CrudWorker|null
+   */
+  public function createCrudWorker(Config $settings, StratumStyle $io): ?CrudWorker
+  {
+    unset($settings, $io);
+
+    return null;
+  }
+
+  //--------------------------------------------------------------------------------------------------------------------
+  /**
    * Creates the object that does the actual execution of the routine loader command for the backend.
    *
    * @param Config       $settings The settings from the PhpStratum configuration file.
