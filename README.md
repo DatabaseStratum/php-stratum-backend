@@ -17,18 +17,13 @@ The glue between PhpStratum and backends for RDBMS.
 <a href="https://gitter.im/SetBased/php-stratum?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge"><img src="https://badges.gitter.im/SetBased/php-stratum.svg" alt="Gitter"/></a>
 </td>
 <td>
-<a href="https://packagist.org/packages/setbased/php-stratum-backend
-"><img src="https://poser.pugx.org/setbased/php-stratum-backend
-/license" alt="License"/></a>
+<a href="https://packagist.org/packages/setbased/php-stratum-backend"><img src="https://poser.pugx.org/setbased/php-stratum-backend/license" alt="License"/></a>
 </td>
 <td>
-<a href="https://packagist.org/packages/setbased/php-stratum-backend
-"><img src="https://poser.pugx.org/setbased/php-stratum-backend
-/v/stable" alt="Latest Stable Version"/></a><br/>
+<a href="https://packagist.org/packages/setbased/php-stratum-backend"><img src="https://poser.pugx.org/setbased/php-stratum-backend/v/stable" alt="Latest Stable Version"/></a><br/>
 </td>
 <td>
-<a href="https://scrutinizer-ci.com/g/SetBased/php-stratum-backend
-/?branch=master"><img src="https://scrutinizer-ci.com/g/SetBased/php-stratum/badges/quality-score.png?b=master" alt="Scrutinizer Code Quality"/></a>
+<a href="https://scrutinizer-ci.com/g/SetBased/php-stratum-backend/?branch=master"><img src="https://scrutinizer-ci.com/g/SetBased/php-stratum/badges/quality-score.png?b=master" alt="Scrutinizer Code Quality"/></a>
 </td>
 </tr>
 </tbody>
