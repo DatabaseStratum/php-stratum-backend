@@ -1,6 +1,6 @@
 # PhpStratum Backend
 
-The glue between PhpStratum and backends for RDBMS.
+The glue between PhpStratum and backends for database servers.
 
 <table>
 <thead>
