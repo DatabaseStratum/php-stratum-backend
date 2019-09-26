@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace SetBased\Stratum;
+namespace SetBased\Stratum\Backend;
 
 /**
  * Semi interface for PhpStratum's backends.

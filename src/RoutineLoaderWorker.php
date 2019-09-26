@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace SetBased\Stratum;
+namespace SetBased\Stratum\Backend;
 
 /**
  * Interface for classes that do the actual execution of the routine loader command.

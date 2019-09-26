@@ -15,12 +15,12 @@
   },
   "autoload": {
     "psr-4": {
-      "SetBased\\Stratum\\": "src/"
+      "SetBased\\Stratum\\Backend\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "SetBased\\Stratum\\Test\\": "test/"
+      "SetBased\\Stratum\\Backend\\Test\\": "test/"
     }
   },
   "config": {
