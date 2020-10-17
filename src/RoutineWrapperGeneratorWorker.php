@@ -11,8 +11,7 @@ interface RoutineWrapperGeneratorWorker
   //--------------------------------------------------------------------------------------------------------------------
   /**
    * Does the actual execution of the routine wrapper generator loader command for the backend. Returns 0 on success.
-   * Otherwise returns
-   * nonzero.
+   * Otherwise returns nonzero.
    *
    * @return int
    */
