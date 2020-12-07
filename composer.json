@@ -6,8 +6,8 @@
   ],
   "license": "MIT",
   "require": {
-    "php": ">=7.3",
-    "symfony/console": "^5.0"
+    "php": ">=7.4",
+    "symfony/console": "^5.2"
   },
   "require-dev": {
     "phing/phing": "^2.0"
@@ -15,11 +15,6 @@
   "autoload": {
     "psr-4": {
       "SetBased\\Stratum\\Backend\\": "src/"
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "SetBased\\Stratum\\Backend\\Test\\": "test/"
     }
   },
   "config": {
