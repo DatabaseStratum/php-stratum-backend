@@ -7,10 +7,10 @@
   "license": "MIT",
   "require": {
     "php": ">=7.4",
-    "symfony/console": "^5.2"
+    "symfony/console": "^5.4.16 || ^6.2.2"
   },
   "require-dev": {
-    "phing/phing": "^2.0"
+    "phing/phing": "^2.17.4"
   },
   "autoload": {
     "psr-4": {

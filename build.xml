@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="PhpStratum" default="build" basedir=".">
-    <!-- Run composer update -->
+
+    <!-- Run composer update and executes various other updates -->
     <target name="update">
-        <!-- Update PHP packages -->
         <exec executable="composer" checkreturn="true" passthru="true">
             <arg value="--ansi"/>
             <arg value="update"/>
         </exec>
 
-        <!-- Show outdated PHP packages -->
-        <exec executable="composer" checkreturn="true" passthru="true">
+        <phing phingfile="build.xml" target="outdated" haltonfailure="true"/>
+    </target>
+
+    <!-- Show outdated packages -->
+    <target name="outdated">
+        <exec executable="composer" checkreturn="false" passthru="true">
             <arg value="--ansi"/>
             <arg value="outdated"/>
             <arg value="--direct"/>
