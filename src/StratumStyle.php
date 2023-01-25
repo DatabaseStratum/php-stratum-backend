@@ -39,62 +39,87 @@ class StratumStyle extends SymfonyStyle
   }
 
   //--------------------------------------------------------------------------------------------------------------------
-  public function logDebug()
+  /**
+   * Logs a message according to a format string at verbosity level OutputInterface::VERBOSITY_NORMAL.
+   *
+   * @param string $format    The format string, see sprintf.
+   * @param mixed  ...$values The values.
+   *
+   * @return void
+   */
+  public function logDebug(string $format, mixed ...$values): void
   {
     if ($this->getVerbosity()>=OutputInterface::VERBOSITY_DEBUG)
     {
-      $args   = func_get_args();
-      $format = array_shift($args);
-
-      $this->writeln(vsprintf('<info>'.$format.'</info>', $args));
+      $this->writeln(vsprintf('<info>'.$format.'</info>', $values));
     }
   }
 
   //--------------------------------------------------------------------------------------------------------------------
-  public function logInfo()
+  /**
+   * Logs a message according to a format string at verbosity level OutputInterface::VERBOSITY_NORMAL.
+   *
+   * @param string $format    The format string, see sprintf.
+   * @param mixed  ...$values The values.
+   *
+   * @return void
+   */
+  public function logInfo(string $format, mixed ...$values): void
   {
     if ($this->getVerbosity()>=OutputInterface::VERBOSITY_NORMAL)
     {
-      $args   = func_get_args();
-      $format = array_shift($args);
-
-      $this->writeln(vsprintf('<info>'.$format.'</info>', $args));
+      $this->writeln(vsprintf('<info>'.$format.'</info>', $values));
     }
   }
 
   //--------------------------------------------------------------------------------------------------------------------
-  public function logNote()
+  /**
+   * Logs a message according to a format string at verbosity level OutputInterface::VERBOSITY_NORMAL.
+   *
+   * @param string $format    The format string, see sprintf.
+   * @param mixed  ...$values The values.
+   *
+   * @return void
+   */
+  public function logNote(string $format, mixed ...$values): void
   {
     if ($this->getVerbosity()>=OutputInterface::VERBOSITY_NORMAL)
     {
-      $args   = func_get_args();
-      $format = array_shift($args);
-
-      $this->writeln('<note> ! [NOTE] '.vsprintf($format, $args).'</note>');
+      $this->writeln('<note> ! [NOTE] '.vsprintf($format, $values).'</note>');
     }
   }
 
   //--------------------------------------------------------------------------------------------------------------------
-  public function logVerbose()
+  /**
+   * Logs a message according to a format string at verbosity level OutputInterface::VERBOSITY_VERBOSE.
+   *
+   * @param string $format    The format string, see sprintf.
+   * @param mixed  ...$values The values.
+   *
+   * @return void
+   */
+  public function logVerbose(string $format, mixed ...$values): void
   {
     if ($this->getVerbosity()>=OutputInterface::VERBOSITY_VERBOSE)
     {
-      $args   = func_get_args();
-      $format = array_shift($args);
-
-      $this->writeln(vsprintf('<info>'.$format.'</info>', $args));
+      $this->writeln(vsprintf('<info>'.$format.'</info>', $values));
     }
   }
 
   //--------------------------------------------------------------------------------------------------------------------
-  public function logVeryVerbose()
+  /**
+   * Logs a message according to a format string at verbosity level OutputInterface::VERBOSITY_VERY_VERBOSE.
+   *
+   * @param string $format    The format string, see sprintf.
+   * @param mixed  ...$values The values.
+   *
+   * @return void
+   */
+  public function logVeryVerbose(string $format, mixed ...$values): void
   {
     if ($this->getVerbosity()>=OutputInterface::VERBOSITY_VERY_VERBOSE)
     {
-      $args   = func_get_args();
-      $format = array_shift($args);
-
-      $this->writeln(vsprintf('<info>'.$format.'</info>', $args));
+      $this->writeln(vsprintf('<info>'.$format.'</info>', $values));
     }
   }
 
