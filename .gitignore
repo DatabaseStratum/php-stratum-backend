@@ -2,4 +2,6 @@
 /bin/phing
 /build/
 /composer.lock
+/custom.task.properties
+/custom.type.properties
 /vendor/
