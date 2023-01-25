@@ -28,18 +28,18 @@ interface Config
    *
    * @return float
    */
-  public function manFiniteFloat(string $key, ?float $default = null): float;
+  public function manFloat(string $key, ?float $default = null): float;
 
   //--------------------------------------------------------------------------------------------------------------------
   /**
-   * Returns the value of a float configuration setting.
+   * Returns the value of a float including NaN, -INF, and INF configuration setting.
    *
    * @param string     $key     The key of the configuration setting. The key might be nested using dot notation.
    * @param float|null $default The default value.
    *
    * @return float
    */
-  public function manFloat(string $key, ?float $default = null): float;
+  public function manFloatInclusive(string $key, ?float $default = null): float;
 
   //--------------------------------------------------------------------------------------------------------------------
   /**
@@ -70,7 +70,7 @@ interface Config
    * @param string    $key     The key of the configuration setting. The key might be nested using dot notation.
    * @param bool|null $default The default value.
    *
-   * @return bool
+   * @return bool|null
    */
   public function optBool(string $key, ?bool $default = null): ?bool;
 
@@ -81,20 +81,20 @@ interface Config
    * @param string     $key     The key of the configuration setting. The key might be nested using dot notation.
    * @param float|null $default The default value.
    *
-   * @return float
+   * @return float|null
    */
-  public function optFiniteFloat(string $key, ?float $default = null): ?float;
+  public function optFloat(string $key, ?float $default = null): ?float;
 
   //--------------------------------------------------------------------------------------------------------------------
   /**
-   * Returns the value of an optional float configuration setting.
+   * Returns the value of an optional float including NaN, -INF, and INF configuration setting.
    *
    * @param string     $key     The key of the configuration setting. The key might be nested using dot notation.
    * @param float|null $default The default value.
    *
-   * @return float
+   * @return float|null
    */
-  public function optFloat(string $key, ?float $default = null): ?float;
+  public function optFloatInclusive(string $key, ?float $default = null): ?float;
 
   //--------------------------------------------------------------------------------------------------------------------
   /**
@@ -103,7 +103,7 @@ interface Config
    * @param string   $key     The key of the configuration setting. The key might be nested using dot notation.
    * @param int|null $default The default value.
    *
-   * @return int
+   * @return int|null
    */
   public function optInt(string $key, ?int $default = null): ?int;
 
@@ -114,7 +114,7 @@ interface Config
    * @param string      $key     The key of the configuration setting. The key might be nested using dot notation.
    * @param string|null $default The default value.
    *
-   * @return string
+   * @return string|null
    */
   public function optString(string $key, ?string $default = null): ?string;
 
