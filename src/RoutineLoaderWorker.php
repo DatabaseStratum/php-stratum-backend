@@ -10,7 +10,7 @@ interface RoutineLoaderWorker
 {
   //--------------------------------------------------------------------------------------------------------------------
   /**
-   * Does the actual execution of the routine loader command for the backend. Returns 0 on success. Otherwise returns
+   * Does the actual execution of the routine loader command for the backend. Returns 0 on success. Otherwise, returns
    * nonzero.
    *
    * @param array|null $sources An optional list of paths to sources of stored routines that must be loaded. If null all

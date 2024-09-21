@@ -10,7 +10,7 @@ interface ConstantWorker
 {
   //--------------------------------------------------------------------------------------------------------------------
   /**
-   * Does the actual execution of the constant command for the backend. Returns 0 on success. Otherwise returns nonzero.
+   * Does the actual execution of the constant command for the backend. Returns 0 on success. Otherwise, returns nonzero.
    *
    * @return int
    */
