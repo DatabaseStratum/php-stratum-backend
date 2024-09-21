@@ -1,7 +1,6 @@
 /.idea
 /bin/phing
+/bin/yaml-lint
 /build/
 /composer.lock
-/custom.task.properties
-/custom.type.properties
 /vendor/
