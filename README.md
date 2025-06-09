@@ -8,7 +8,6 @@ The glue between PhpStratum and backends for database servers.
 <th>Social</th>
 <th>Legal</th>
 <th>Release</th>
-<th>Code</th>
 </tr>
 </thead>
 <tbody>
@@ -21,9 +20,6 @@ The glue between PhpStratum and backends for database servers.
 </td>
 <td>
 <a href="https://packagist.org/packages/setbased/php-stratum-backend"><img src="https://poser.pugx.org/setbased/php-stratum-backend/v/stable" alt="Latest Stable Version"/></a><br/>
-</td>
-<td>
-<a href="https://scrutinizer-ci.com/g/DatabaseStratum/php-stratum-backend/?branch=master"><img src="https://scrutinizer-ci.com/g/DatabaseStratum/php-stratum-backend/badges/quality-score.png?b=master" alt="Scrutinizer Code Quality"/></a>
 </td>
 </tr>
 </tbody>
